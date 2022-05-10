@@ -25,8 +25,8 @@ gem 'turbolinks'
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 gem "bootsnap", require: false
-
-
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+gem 'devise', '~> 4.8', '>= 4.8.1'
 
 
 group :development, :test do
