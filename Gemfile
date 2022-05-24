@@ -15,7 +15,7 @@ gem "importmap-rails"
 
 gem "turbo-rails"
 gem 'simple_form'
-
+gem 'rails-controller-testing'
 
 gem "stimulus-rails"
 
@@ -23,6 +23,8 @@ gem "jbuilder"
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'will_paginate', '~> 3.3', '>= 3.3.1'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
@@ -32,10 +34,12 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 
 
 group :development, :test do
+
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
   gem "web-console"
 
   
