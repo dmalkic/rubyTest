@@ -5,12 +5,22 @@ RSpec.describe ArticlesController, type: :controller do
 describe 'Get #index' do
   before do
     get :index
+    expect(response).to be_successful
   end
-  it 'Should get articles' do
-    articles= Article.all
-    last5 = Article.last(5)
 end
+  
+#it "renders index template" do
+  #get :index
+  #expect(response).to render_template("index")
+#end
+
+it 'Should get articles' do
+  articles= Article.all
+  last5 = Article.last(5)
+  expect(response).to be_successful
 end
+
+
 
 #new action
 describe 'Get #new' do
@@ -19,7 +29,8 @@ describe 'Get #new' do
 end
 it 'lets user make new article' do
   
-end
-end
+  end
+    end
+
 end
 
