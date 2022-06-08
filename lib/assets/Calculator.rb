@@ -1,14 +1,13 @@
 class Calculator
     
-    def initialize (list)
-        @list = Array.new([2,4,5,1])
+    def initialize (list = Array.new)
+        @list = list
     end
 
-
-
     def sum ()
-        
-        @list.sum
+        sum = 0
+        @list.each do |i|
+            sum +=i
     end
         puts sum
     end
@@ -19,11 +18,22 @@ class Calculator
     end
 
     def max()
-        max=  @list.max
+        max =  @list.max
         puts max
     end
 
-    
+    def odd()
+        num = 0
+        @list.each do |i|
+            num +=i
+        end
+        puts num.odd? 
+        
+    end
+
+    def hello ()
+        puts "Hello, I am your Calculator :) "
+    end
 end
 
 
@@ -32,3 +42,4 @@ numbers.sum()
 numbers.min()
 numbers.max()
 numbers.odd()
+numbers.hello()
